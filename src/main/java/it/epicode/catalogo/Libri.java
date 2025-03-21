@@ -1,4 +1,4 @@
-package it.epicode.classi;
+package it.epicode.catalogo;
 
 public class Libri extends ElementoCatalogo {
 
