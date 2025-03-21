@@ -7,8 +7,6 @@ public abstract class ElementoCatalogo {
     private int annoPubblicazione;
     private int numeroPagine;
 
-    public ElementoCatalogo() {};
-
     public ElementoCatalogo(String isbn, String titolo, int annoPubblicazione, int numeroPagine) {
         this.isbn = isbn;
         this.titolo = titolo;

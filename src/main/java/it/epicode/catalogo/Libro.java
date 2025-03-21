@@ -1,13 +1,12 @@
 package it.epicode.catalogo;
 
-public class Libri extends ElementoCatalogo {
+public class Libro extends ElementoCatalogo {
 
     private String autore;
     private String genere;
+    
 
-    public Libri() {};
-
-    public Libri(String isbn, String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {
+    public Libro(String isbn, String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {
         super(isbn, titolo, annoPubblicazione, numeroPagine);
         this.autore = autore;
         this.genere = genere;
