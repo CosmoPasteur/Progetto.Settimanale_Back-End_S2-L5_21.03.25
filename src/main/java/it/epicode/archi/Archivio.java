@@ -20,4 +20,6 @@ public class Archivio {
     public ElementoCatalogo cercaElemento(String isbn) {
         return elementi.stream().filter(e -> e.getIsbn().equals(isbn)).findFirst().orElse(null);
     }
+
+
 }
