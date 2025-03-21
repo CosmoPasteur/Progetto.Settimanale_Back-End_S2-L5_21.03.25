@@ -5,7 +5,6 @@ import it.epicode.archi.Archivio;
 import it.epicode.catalogo.ElementoCatalogo;
 import it.epicode.catalogo.Libri;
 import it.epicode.eccezioni.ElementoNonTrovatoException;
-import it.epicode.eccezioni.IsbnGiaEsistenteException;
 
 import java.util.List;
 import java.util.Scanner;
@@ -65,14 +64,14 @@ public class Main {
 
 
                 }
-            } catch (IsbnGiaEsistenteException | ElementoNonTrovatoException e) {
+            } catch ( ElementoNonTrovatoException e) {
                 System.out.println("Errore: " + e.getMessage());
             }
         }
 
     }
 
-    private static void aggiungiLibro(Archivio archivio, Scanner scanner) throws IsbnGiaEsistenteException {
+    private static void aggiungiLibro(Archivio archivio, Scanner scanner) throws ElementoNonTrovatoException {
         System.out.print("Inserisci il tipo di elemento ( Libro / Rivista ):");
         String tipo = scanner.nextLine();
 
@@ -130,7 +129,7 @@ public class Main {
         System.out.println("Risultati: " + risultati);
     }
 
-    private static void aggiornaElemento (Archivio archivio, Scanner scanner) throws ElementoNonTrovatoException, IsbnGiaEsistenteException {
+    private static void aggiornaElemento (Archivio archivio, Scanner scanner) throws ElementoNonTrovatoException, ElementoNonTrovatoException {
         System.out.println("ISBN: ");
         String isbn = scanner.nextLine();
         aggiungiLibro(archivio, scanner);

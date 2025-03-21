@@ -1,7 +1,6 @@
 package it.epicode.archi;
 
 import it.epicode.catalogo.ElementoCatalogo;
-import it.epicode.eccezioni.IsbnGiaEsistenteException;
 
 import java.util.ArrayList;
 import java.util.List;
